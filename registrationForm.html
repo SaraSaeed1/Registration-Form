@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        div{
+            margin-top: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="/process" method="post">
+        <div>
+            <label required>First Name:* </label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div>
+            <label required>Last Name:*</label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div>
+            <div>
+                <label required>Email Address:* </label>
+                <input type="text" name="email" required>
+            </div>
+
+            <div>
+                <label required >Password:*</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <div>
+                <label required>Confirm Password:*</label>
+                <input type="password" id="confirm_password" required>
+            </div>
+
+            <div>
+                <label >Birthday</label>
+                <input type="date" name="dob">
+            </div>
+
+            <div>
+                <p>Gender Identity:</p>
+                <input type="radio" name="font" value="male" id="male">
+                <label for="male">Male</label>
+
+                        <input type="radio" name="font" value="female" id="female">
+                        <label for="female">Female</label>
+
+                                <input type="radio" name="font" value="Non-binary" id="Non-binary">
+                                <label for="Non-binary">Non-binary</label>
+
+                                        <input type="radio" name="font" value="NotToAswer"
+                                            id="NotToAswer">
+                                        <label for="NotToAswer">I prefer not to answer</label>
+            </div>
+
+            <div>
+                <p> A short description about my self:</p>
+                <textarea name="comment" cols="20" rows="7"></textarea>
+            </div>
+            <div>
+                <label>Favorite Language:</label>
+                <select name="Favorite Language">
+                    <option>JavaScript</option>
+                    <option>Java</option>
+                    <option>C++</option>
+                    <option>Python</option>
+                    <option>PHP</option>
+                    <option>C#</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" name="accept" id="accept">
+                <label for="accept">Yes, I would like to recieve periodic email updates</label>
+            </div>
+
+            <div>
+            </div>
+            <input type="submit" value="Create Account" >
+            </div>
+
+            <div>
+                <p> * indicates a required field</p>
+            </div>
+
+    </form>
+</body>
+
+</html>
